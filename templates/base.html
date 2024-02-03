@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa_IR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وبسایت شخصی مهدی رمضانی</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+    <link rel="stylesheet" href="{% static "assets/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/css/aos.css" %}">
+
+    <link rel="stylesheet" href="{% static "assets/css/style.css" %}">
+</head>
+<body>
+
+    <main class="main-homepage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="{% url "HomeApp:HomeView" %}" class="logo">
+                        <img src="{% static "assets/images/logo.svg" %}" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li class="active"><a href="{% url "HomeApp:HomeView" %}">خانه</a></li>
+                            <li><a href="{% url "HomeApp:about" %}">درباره من</a></li>
+                            <li><a href="{% url "HomeApp:work" %}">کارهای من</a></li>
+                            <li><a href="{% url "HomeApp:contact" %}">تماس با من</a></li>
+                        </ul>
+                        <a href="contact.html" class="theme-btn">بیا حرف بزنیم</a>
+                    </nav>
+
+                    <a href="{% url "HomeApp:contact" %}" class="theme-btn">بیا حرف بزنیم</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+    <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a href="index.html" class="logo">
+                        <img src="{% static "assets/images/logo.svg" %}" alt="Logo">
+                    </a>
+                    <ul class="footer-menu">
+                        <li><a href="{% url "HomeApp:HomeView" %}">خانه</a></li>
+                        <li><a href="{% url "HomeApp:about" %}">درباره</a></li>
+                        <li><a href="{% url "HomeApp:work" %}">کارها</a></li>
+                        <li><a href="{% url "HomeApp:contact" %}">تماس با ما</a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy; کلیه حقوق این سایت متعلق به <span>مهدی رمضانی</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="{% static "assets/js/jquery-3.6.4.js" %}"></script>
+    <script src="{% static "assets/js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "assets/js/aos.js" %}"></script>
+    <script src="{% static "assets/js/main.js" %}"></script>
+</body>
+</html>

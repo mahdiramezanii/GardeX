@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!-- Contact -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="gx-row d-flex justify-content-between gap-24">
+                    <div class="contact-infos">
+                        <h3 data-aos="fade-up">اطلاعات تماس</h3>
+                        <ul class="contact-details">
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-mail"></i>
+                                </div>
+                                <div class="right">
+                                    <span>به ما ایمیل بزنید</span>
+                                    <h4>info@bluebase.com</h4>
+                                    <h4>info@bluebase2.com</h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-phone"></i>
+                                </div>
+                                <div class="right">
+                                    <span>با ما تماس بگیرید</span>
+                                    <h4>+1 504-899-8221</h4>
+                                    <h4>+1 504-749-5456</h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-pin-alt"></i>
+                                </div>
+                                <div class="right">
+                                    <span>لوکیشن</span>
+                                    <h4>خیابان بیکر 22، تگزاس <br>ایالات متحده<br>W1U 3BW</h4>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 data-aos="fade-up">اطلاعات اجتماعی</h3>
+                        <ul class="social-links d-flex align-center" data-aos="zoom-in">
+                            <li><a class="shadow-box" href="contact.html"><i class="iconoir-dribbble"></i></a></li>
+                            <li><a class="shadow-box" href="contact.html"><i class="iconoir-twitter"></i></a></li>
+                            <li><a class="shadow-box" href="contact.html"><i class="iconoir-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" class="contact-form">
+                        <div class="shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <img id="rtlsm" src="assets/images/icon3.png" alt="Icon">
+                            <h1>بیا کار کنیم <span>با یکدیگر.</span></h1>
+                            <form method="POST" action="https://wpriverthemes.com/landing/gridx-html/mailer.php">
+                                <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                                    پیام شما با موفقیت ارسال شد.
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="full-name" id="full-name" placeholder="نام *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" id="email" placeholder="ایمیل *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="subject" id="subject" placeholder="عنوان شما *">
+                                </div>
+                                <div class="input-group">
+                                    <textarea name="message" id="message" placeholder="پیام شما *"></textarea>
+                                </div>
+                                <div class="input-group">
+                                    <button class="theme-btn submit-btn" name="submit" type="submit">ارسال پیام</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+{% endblock %}

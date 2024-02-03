@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <!-- About -->
+        <section class="about-area">
+            <div class="container">
+                <div class="d-flex about-me-wrap align-items-start gap-24">
+                    <div data-aos="zoom-in">
+                        <div class="about-image-box shadow-box">
+                            <img src="{% static "assets/images/bg1.png" %}" alt="BG" class="bg-img">
+                            <div class="image-inner">
+                                <img src="{% static "assets/images/me2.png" %}" alt="About Me">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-details" data-aos="zoom-in">
+                        <h1 class="section-heading" data-aos="fade-up"><img src="{% static "assets/images/star-2.png" %}" alt="Star"> خود خلاصه <img src="assets/images/star-2.png" alt="Star"></h1>
+                        <div class="about-details-inner shadow-box">
+                            <img src="{% static "assets/images/icon2.png" %}" alt="Star">
+                            <h1>دیوید هندرسون</h1>
+                            <p>من یک طراح محصول مستقر در سانفرانسیسکو با تمرکز بر طراحی وب، تصویرسازی، توسعه بصری هستم. من طیف متنوعی از تجربیات را دارم که در زمینه ها و صنایع مختلف کار کرده ام.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-edc-exp about-experience shadow-box">
+                            <img src="{% static "assets/images/bg1.png" %}" alt="BG" class="bg-img">
+                            <h3>تجربه</h3>
+
+                            <ul>
+                                <li>
+                                    <p class="date">1400 -1402</p>
+                                    <h2>طراح و توسعه دهنده فارمر</h2>
+                                    <p class="type">طرح های بلو بیس</p>
+                                </li>
+                                <li>
+                                    <p class="date">1400 -1402</p>
+                                    <h2>توسعه دهنده فرانت اند</h2>
+                                    <p class="type">لارسن و توبرو</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-edc-exp about-education shadow-box">
+                            <img src="{% static "assets/images/bg1.png" %}" alt="BG" class="bg-img">
+                            <h3>تحصیلات</h3>
+
+                            <ul>
+                                <li>
+                                    <p class="date">1400 -1402</p>
+                                    <h2>لیسانس روانشناسی</h2>
+                                    <p class="type">دانشگاه کالیفرنیا</p>
+                                </li>
+                                <li>
+                                    <p class="date">1400 -1402</p>
+                                    <h2>کارشناسی ارشد طراحی</h2>
+                                    <p class="type">دانشگاه تگزاس</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-12">
+                        <div class="d-flex profile-contact-credentials-wrap gap-24">
+
+                            <div data-aos="zoom-in">
+                                <div class="about-profile-box info-box shadow-box h-full">
+                                    <img src="{% static "assets/images/bg1.png" %}" alt="BG" class="bg-img">
+                                    <div class="inner-profile-icons shadow-box">
+                                        <a href="about.html#">
+                                            <i class="iconoir-dribbble"></i>
+                                        </a>
+                                        <a href="about.html#">
+                                            <i class="iconoir-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>با من بمان</h4>
+                                            <h1>پروفایل ها</h1>
+                                        </div>
+    
+                                        <a href="contact.html" class="about-btn">
+                                            <img id="rdt" src="{% static "assets/images/icon.svg" %}" alt="Button">
+                                        </a>
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="about-contact-box info-box shadow-box">
+                                    <a class="overlay-link" href="contact.html"></a>
+                                    <img src="{% static "assets/images/bg1.png" %}" alt="BG" class="bg-img">
+                                    <img src="{% static "assets/images/icon2.png" %}" alt="Icon" class="star-icon">
+                                    <h1>بیایید <br>با هم <span>کار کنیم.</span></h1>
+                                    <a href="contact.html" class="about-btn">
+                                        <img id="rdt" src="{% static "assets/images/icon.svg" %}" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="h-full">
+                                <div class="about-crenditials-box info-box shadow-box">
+                                    <a class="overlay-link" href="credentials.html"></a>
+                                    <img src="{% static "assets/images/bg1.png" %}" alt="BG" class="bg-img">
+                                    <img src="{% static "assets/images/sign.png" %}" alt="Sign">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>بیشتر در مورد من</h4>
+                                            <h1>اعتبارنامه</h1>
+                                        </div>
+    
+                                        <a href="credentials.html" class="about-btn">
+                                            <img id="rdt" src={% static "assets/images/icon.svg" %} alt="Button">
+                                        </a>
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
